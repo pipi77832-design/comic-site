@@ -8,11 +8,7 @@ header{background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);posi
 .header-inner{height:62px;display:flex;align-items:center;justify-content:space-between}
 .brand{font-weight:850;text-decoration:none;letter-spacing:.01em}
 .small-nav a{color:#52555e;text-decoration:none;margin-left:16px;font-size:14px}
-.hero{padding:34px 0 18px}
-.hero h1{font-size:30px;margin:0 0 10px}
-.hero p{line-height:1.7;color:var(--muted);max-width:780px;margin:0}
-.checked-note{font-size:12px;margin-top:8px!important}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:10px 0 28px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:10px 0 28px;align-items:start}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:13px;box-shadow:0 4px 14px rgba(20,20,35,.045);min-width:0;overflow:hidden;display:flex;flex-direction:column}
 .card-number{padding:8px 10px 0;color:#a1a3aa;font-size:10px;font-weight:800;letter-spacing:.1em}
 .card-body{padding:4px 10px 11px;display:flex;flex-direction:column;height:100%;min-width:0}
@@ -47,9 +43,6 @@ footer a{color:#555963;margin-right:18px;font-size:13px}
   .header-inner{height:52px}
   .brand{font-size:14px}
   .small-nav a{font-size:12px;margin-left:10px}
-  .hero{padding:16px 0 10px}
-  .hero h1{font-size:20px;margin-bottom:6px}
-  .hero p{font-size:12.5px;line-height:1.55}
   .grid{padding-top:7px}
   .detail{padding-top:16px}
   .detail-card{padding:18px 16px}
