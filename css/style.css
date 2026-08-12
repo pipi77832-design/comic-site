@@ -62,7 +62,9 @@ footer a{color:#555963;margin-right:18px;font-size:13px}
 /* 新システムが追加した作品(画像+一言のみのカード/画像+こちらから+リンクURLのみの詳細) */
 .card-new{text-decoration:none;color:inherit}
 .card-new-image{width:100%;display:block;aspect-ratio:1/1;object-fit:cover}
-.card-new-note{padding:8px 10px 11px;margin:0;font-size:11.5px;line-height:1.6;overflow-wrap:anywhere}
+.card-new-body{padding:8px 10px 11px}
+.card-new-note{margin:0 0 8px;font-size:11.5px;line-height:1.6;overflow-wrap:anywhere}
+body.detail-fanza header,body.detail-fanza footer{display:none}
 .detail-new-image-link{display:block}
 .detail-new-image{width:100%;max-width:360px;border-radius:14px;display:block;margin:0 auto 12px}
 .detail-new-subimages{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0 0 18px}

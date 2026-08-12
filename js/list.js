@@ -42,7 +42,10 @@ function renderCard(item) {
     return `
       <a class="card card-new" href="detail.html?id=${encodeURIComponent(item.id)}">
         <img class="card-new-image" src="${escapeHtml(firstImage)}" alt="">
-        <p class="card-new-note">${escapeHtml(item.communityNote)}</p>
+        <div class="card-new-body">
+          <p class="card-new-note">${escapeHtml(item.communityNote)}</p>
+          <span class="button">詳しく見る</span>
+        </div>
       </a>
     `;
   }
