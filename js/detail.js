@@ -51,7 +51,6 @@ fetch("data/items.json")
               .join("")}</div>`
           : "";
       detail.innerHTML = `
-        <a class="back-link" href="javascript:history.back()">← 一覧へ戻る</a>
         <article class="detail-card">
           <a class="detail-new-image-link" href="${escapeHtml(affiliateUrl)}">
             <img class="detail-new-image" src="${escapeHtml(images[0] || "")}" alt="">
