@@ -11,9 +11,8 @@ header{background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);posi
 .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:10px 0 28px;align-items:start}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:13px;box-shadow:0 4px 14px rgba(20,20,35,.045);min-width:0;overflow:hidden;display:flex;flex-direction:column}
 .card-number{padding:8px 10px 0;color:#a1a3aa;font-size:10px;font-weight:800;letter-spacing:.1em}
-.card-cover{width:100%;display:block;aspect-ratio:3/4;object-fit:cover}
-.card-body{padding:8px 10px 11px;display:flex;flex-direction:column;min-width:0}
-.card h2{font-size:14px;line-height:1.35;margin:0 0 8px;overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card-body{padding:4px 10px 11px;display:flex;flex-direction:column;height:100%;min-width:0}
+.card h2{font-size:14px;line-height:1.35;margin:0 0 5px;overflow-wrap:anywhere}
 .creator{font-size:10.5px;line-height:1.4;color:var(--muted);margin:0 0 8px;overflow-wrap:anywhere}
 .card-facts{margin:0 0 10px;display:grid;gap:5px}
 .card-facts div{border-top:1px solid #f0f0f2;padding-top:5px;min-width:0}
@@ -29,7 +28,6 @@ footer a{color:#555963;margin-right:18px;font-size:13px}
 .detail{padding-top:28px;padding-bottom:38px}
 .back-link{display:inline-block;color:#555963;text-decoration:none;font-size:13px;margin:0 0 12px}
 .detail-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 6px 20px rgba(20,20,35,.04)}
-.detail-cover{width:100%;max-width:280px;border-radius:14px;display:block;margin:0 auto 18px}
 .detail-kicker{font-size:11px;letter-spacing:.12em;color:#8c8e96;margin:0 0 7px}
 .detail-card h1{font-size:27px;line-height:1.35;margin:0 0 7px;overflow-wrap:anywhere}
 .detail-creator{color:var(--muted);line-height:1.6;margin:0}

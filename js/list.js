@@ -35,10 +35,7 @@ function renderPager(page, totalPages) {
 
 // 新システムが追加した作品(communityNoteを持つ)は「選択画像の1枚目+一言」のみのカードにする。
 // images(選択順の配列)の先頭を一覧カードの画像として使う。枚数は固定しない。
-// このカードの構造・表示仕様には今回手を加えない。
-//
-// 既存の作品カードは、DMM公式API(service=ebook/floor=comic)由来の実データのみを使う。
-// 一覧では表紙画像+作品名+「詳しく見る」だけを表示する(プロフィール的な詳細情報は詳細ページのみ)。
+// 既存30件は従来どおりのカードのまま変更しない。
 function renderCard(item) {
   if (typeof item.communityNote === "string") {
     const firstImage = Array.isArray(item.images) && item.images.length > 0 ? item.images[0] : "";
@@ -54,10 +51,17 @@ function renderCard(item) {
   }
   return `
     <article class="card">
-      <img class="card-cover" src="${escapeHtml(item.image)}" alt="">
+      <div class="card-number" aria-hidden="true">${String(item.id).padStart(2, "0")}</div>
       <div class="card-body">
         <h2>${escapeHtml(item.title)}</h2>
-        <a class="button" href="detail.html?id=${encodeURIComponent(item.id)}">詳しく見る</a>
+        <p class="creator">${escapeHtml(item.creators)}</p>
+        <dl class="card-facts">
+          <div><dt>出版社</dt><dd>${escapeHtml(item.publisher)}</dd></div>
+          <div><dt>掲載</dt><dd>${escapeHtml(item.medium)}</dd></div>
+          <div><dt>状況</dt><dd>${escapeHtml(item.status)}</dd></div>
+          <div><dt>単行本</dt><dd>${escapeHtml(item.volumes)}</dd></div>
+        </dl>
+        <a class="button" href="detail.html?id=${encodeURIComponent(item.id)}">詳しい情報</a>
       </div>
     </article>
   `;
